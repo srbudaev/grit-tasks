@@ -95,7 +95,7 @@ The goal of this exercise is to learn to deal with punctuation. In Natural Langu
 
 # Exercise 3: Tokenization
 
-The goal of this exercise is to learn to tokenize as text. This step is important because it splits the text into token. A token could be a sentence or a word.
+The goal of this exercise is to learn [to tokenize](https://en.wikipedia.org/wiki/Lexical_analysis#Tokenization) as text. This step is important because it splits the text into token. A token could be a sentence or a word.
 
 ```
 text = """Bitcoin is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto. The currency began use in 2009 when its implementation was released as open-source software."""
@@ -105,8 +105,6 @@ text = """Bitcoin is a cryptocurrency invented in 2008 by an unknown person or g
 1. Tokenize this text using `sent_tokenize` from NLTK.
 
 2. Tokenize this text using `word_tokenize` from NLTK.
-
-_Resources: [How to Get Started with NLP – 6](https://www.analyticsvidhya.com/blog/2019/07how-get-started-nlp-6-unique-ways-perform-tokenization/)_
 
 ---
 
@@ -206,23 +204,23 @@ Steps:
 
 > Note: The sample 3x3 table mentioned is a small representation of the expected output for demonstration purposes. It's not necessary to drop columns in this context.
 
-3. Show the token counts (obtained with the above-mentioned steps) of the fourth tweet. 
+3. Show the token counts (obtained with the above-mentioned steps) of the fourth tweet.
 
-4. Using the word counter, show the 15 most used tokenized words in the datasets' tweets 
+4. Using the word counter, show the 15 most used tokenized words in the datasets' tweets
 
 5. Add to your `count_vecotrized_df` a `label` column considering the following:
+
    - 1: Positive
    - 0: Neutral
    - -1: Negative
 
    The final DataFrame should be similar to the below:
 
-
-|    |   ...  |   label |
-|---:|-------:|--------:|
-|  0 |    ... |       1 |
-|  1 |    ... |      -1 |
-|  2 |    ... |      -1 |
-|  3 |    ... |      -1 |
+|     | ... | label |
+| --: | --: | ----: |
+|   0 | ... |     1 |
+|   1 | ... |    -1 |
+|   2 | ... |    -1 |
+|   3 | ... |    -1 |
 
 _Resources: [sklearn.feature_extraction.text.CountVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html)_
